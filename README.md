@@ -1,4 +1,4 @@
-# Projektarbeit - JM
+# Projektarbeit - JK
 
 ## App doesnt run
 
