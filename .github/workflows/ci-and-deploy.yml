@@ -1,20 +1,21 @@
 name: CI → GitHub Pages
 
+# make sure GITHUB_TOKEN has the right scopes
 permissions:
-  contents: read       # allow reading the repo
-  pages: write         # allow deploying Pages
-  id-token: write      # required by deploy-pages
+  contents: read       # read from your repo
+  pages: write         # allow Pages deployments
+  id-token: write      # required by deploy-pages@v1
 
 on:
   push:
     branches:
-      - master         # or your default branch
+      - master         # (or 'main' if that’s your default branch)
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -29,18 +30,19 @@ jobs:
         run: npm test -- --watchAll=false
 
       - name: Build production bundle
-        run: npm run build   # outputs into dist/
+        run: npm run build   # → outputs into dist/
 
-      - name: Upload Pages artifact
+      - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v1
         with:
-          path: dist         # point at your Vite output
+          path: dist         # ← point at your Vite output dir
 
   deploy:
     needs: build-and-test
     runs-on: ubuntu-latest
     environment:
-      name: github-pages   # pulls in the uploaded dist/ automatically
+      name: github-pages   # special environment for Pages
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
+        id: deploy-pages
