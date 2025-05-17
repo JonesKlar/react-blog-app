@@ -1,0 +1,53 @@
+name: CI → GitHub Pages
+
+on:
+  push:
+    branches:
+      - master          # or your default branch
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Use Node.js 19.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 19.1
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        # --watchAll=false ensures the test job exits after one run
+        run: npm test -- --watchAll=false
+
+      - name: Build production bundle
+        run: npm run build
+
+      # upload build folder as a job artifact so we can consume it in deploy
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: build
+
+  deploy:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    if: ${{ needs.build-and-test.result == 'success' }}
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages              # the branch the action should deploy to
+          folder: build                 # folder to publish
+          clean: true                   # remove old files before deploying
+          token: ${{ secrets.GITHUB_TOKEN }}
