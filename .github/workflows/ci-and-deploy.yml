@@ -1,8 +1,8 @@
 name: CI → GitHub Pages
 
 permissions:
-  contents: read       # read your repo
-  pages: write         # allow Pages deployments
+  contents: read       # allow reading the repo
+  pages: write         # allow deploying Pages
   id-token: write      # required by deploy-pages
 
 on:
@@ -17,7 +17,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Use Node.js 19.x
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 19.1
@@ -29,20 +29,18 @@ jobs:
         run: npm test -- --watchAll=false
 
       - name: Build production bundle
-        run: npm run build
+        run: npm run build   # outputs into dist/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: dist       # your Vite output folder
+          path: dist         # point at your Vite output
 
   deploy:
     needs: build-and-test
     runs-on: ubuntu-latest
     environment:
-      name: github-pages  # uses the special Pages environment
+      name: github-pages   # pulls in the uploaded dist/ automatically
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
-        id: deploy-pages
-       
