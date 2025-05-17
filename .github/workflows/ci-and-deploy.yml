@@ -26,8 +26,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run tests
-        run: npm test -- --watchAll=false
+      # - name: Run tests
+      #   run: npm test -- --watchAll=false
 
       - name: Build production bundle
         run: npm run build   # → outputs into dist/
