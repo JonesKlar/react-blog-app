@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@latest
 
       - name: Use Node.js 19.x
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@latest
         with:
           node-version: 19.1
 
@@ -29,7 +29,7 @@ jobs:
 
       # upload build folder as a job artifact so we can consume it in deploy
       - name: Upload build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@latest
         with:
           name: build
           path: build
@@ -40,12 +40,12 @@ jobs:
     if: ${{ needs.build-and-test.result == 'success' }}
     steps:
       - name: Download build artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@latest
         with:
           name: build
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@latest
         with:
           branch: gh-pages              # the branch the action should deploy to
           folder: build                 # folder to publish
