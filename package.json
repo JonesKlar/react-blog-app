@@ -19,7 +19,7 @@
     "fresh": "npm install && npm run dev",
     "serve:prod": "concurrently \"npm run start:api\" \"npm run preview\"",
     "predeploy": "npm run build", 
-    "deploy": "gh-pages -d dist --repo https://github.com/jonesklar/react-blog-app.git",
+    "deploy": "gh-pages -d dist --repo git@github.com:JonesKlar/react-blog-app.git",
     "clean": "rmdir /s /q dist"
   },
   "browserslist": [
