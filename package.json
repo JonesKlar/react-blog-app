@@ -18,7 +18,7 @@
     "setup": "npm install -g json-server && npm install && npm run dev",
     "fresh": "npm install && npm run dev",
     "serve:prod": "concurrently \"npm run start:api\" \"npm run preview\"",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build", 
     "deploy": "gh-pages -d dist --repo https://github.com/jonesklar/react-blog-app.git",
     "clean": "rmdir /s /q dist"
   },
