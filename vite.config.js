@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/react-blog-app/',
   build: {
-    outDir: "build", // Change 'dist' to 'build'
+    outDir: "dist", // Change 'dist' to 'build'
   },
   server: {
     host: true,      // shorthand for 0.0.0.0
