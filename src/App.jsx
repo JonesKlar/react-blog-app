@@ -18,12 +18,13 @@ import { ConfigProvider } from './context/ConfigContext.jsx';
 
 function App() {
   console.log('React läuft'); // Debugging log to confirm the app is running
+  const basename = import.meta.env.BASE_URL || '/react-blog-app/'
 
   return (
     <ConfigProvider>
       <AuthProvider>
         {/* Provide authentication context to the entire app */}
-        <Router>
+        <Router basename={basename}>
           {/* React Router to handle navigation */}
           <Header />
           {/* Header component displayed on all pages */}
