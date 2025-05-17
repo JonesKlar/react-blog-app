@@ -1,5 +1,10 @@
 name: CI → GitHub Pages
 
+permissions:
+  contents: read        # we only need to read your repo
+  pages: write          # grant permission to deploy Pages
+  id-token: write       # required by actions/deploy-pages
+
 on:
   push:
     branches:
@@ -37,17 +42,16 @@ jobs:
   deploy:
     needs: build-and-test
     runs-on: ubuntu-latest
-    if: ${{ needs.build-and-test.result == 'success' }}
+    environment:
+      name: github-pages        # uses the special Pages environment
     steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with: { node-version: 18 }
+      - run: npm ci
+      - run: npm run build      # builds into dist/
+      - uses: actions/upload-pages-artifact@v1
         with:
-          name: dist
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages              # the branch the action should deploy to
-          folder: dist                 # folder to publish
-          clean: true                   # remove old files before deploying
-          token: ${{ secrets.GITHUB_TOKEN }}
+          path: dist
+      - uses: actions/deploy-pages@v1
+        id: deploy-pages
