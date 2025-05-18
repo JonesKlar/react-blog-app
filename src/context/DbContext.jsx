@@ -50,7 +50,7 @@ export function DBProvider({ children }) {
     // PROD: use in-memory CRUD
     if (!path) throw new Error('Path is required for in-memory CRUD')
     const [resource, id] = path.split('/')
-  debugger
+    debugger
     switch (resource) {
       case 'users': return inMemoryCRUD('users', id, method, body)
       case 'articles': return inMemoryCRUD('articles', id, method, body)
@@ -128,9 +128,12 @@ export function DBProvider({ children }) {
 
   // Load data on mount
   useEffect(() => {
+
     (async () => {
+
       try {
         let json
+
         if (isDev) {
           const [users, articles, comments] = await Promise.all([
             callApi({ method: 'GET', path: 'users' }),
@@ -138,13 +141,15 @@ export function DBProvider({ children }) {
             callApi({ method: 'GET', path: 'comments' })
           ])
           json = { users, articles, comments }
-        } else {
+        }
+        else {
           // PROD: try IndexedDB first
           const [users, articles, comments] = await Promise.all([
             idbGet('users'),
             idbGet('articles'),
             idbGet('comments')
           ])
+          debugger
           if (users.length || articles.length || comments.length) {
             json = { users, articles, comments }
           } else {
