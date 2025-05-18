@@ -13,7 +13,7 @@ import { useDB } from './../context/DbContext.jsx';
 function HomePage() {
     // const { dbUrl, isProd } = useConfig();
 
-    const { loading, listArticles } = useDB(); // Get the authenticated user from the DB context
+    const { loading, listArticles, data } = useDB(); // Get the authenticated user from the DB context
 
     // State to store all articles
     const [articles, setArticles] = useState([]);
@@ -40,16 +40,17 @@ function HomePage() {
     useEffect(() => {
         async function fetchArticles() {
             try {
-                const articleList = await listArticles(); // Fetch articles from the DB context               
-                setArticles(articleList);
+                // const articleList = await listArticles(); // Fetch articles from the DB context               
+                // setArticles(articleList);
+                !loading && setArticles(data.articles);
                 console.log(articleList);
-                
+
             } catch (error) {
                 toast.error('Error fetching articles:', error); // Log any errors
             }
         }
         fetchArticles();
-    }, []);
+    }, [loading, data.articles]);
 
     // Filter articles based on search and category
     // const filtered = articles
