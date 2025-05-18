@@ -13,7 +13,7 @@ import { useDB } from './../context/DbContext.jsx';
 function HomePage() {
     // const { dbUrl, isProd } = useConfig();
 
-    const { loading, listArticles, listArticlesFiltered } = useDB(); // Get the authenticated user from the DB context
+    const { loading, listArticles } = useDB(); // Get the authenticated user from the DB context
 
     // State to store all articles
     const [articles, setArticles] = useState([]);
@@ -42,6 +42,8 @@ function HomePage() {
             try {
                 const articleList = await listArticles(); // Fetch articles from the DB context               
                 setArticles(articleList);
+                console.log(articleList);
+                
             } catch (error) {
                 toast.error('Error fetching articles:', error); // Log any errors
             }

@@ -46,9 +46,11 @@ export function DBProvider({ children }) {
       if (method === 'DELETE') return null
       return res.json()
     }
+
     // PROD: use in-memory CRUD
     if (!path) throw new Error('Path is required for in-memory CRUD')
     const [resource, id] = path.split('/')
+  debugger
     switch (resource) {
       case 'users': return inMemoryCRUD('users', id, method, body)
       case 'articles': return inMemoryCRUD('articles', id, method, body)
@@ -59,6 +61,7 @@ export function DBProvider({ children }) {
 
   // In-memory & IndexedDB CRUD for users/articles
   async function inMemoryCRUD(storeName, id, method, body) {
+
     const list = data[storeName]
     let updatedList, item
     switch (method) {
@@ -186,6 +189,7 @@ export function DBProvider({ children }) {
 
       listArticles: filter => callApi({ method: 'GET', path: 'articles' }).then(arts => {
         let results = arts
+        console.log('listArticles', arts)
         if (filter?.category) {
           results = results.filter(a =>
             a.category.toLowerCase().includes(filter.category.toLowerCase())
