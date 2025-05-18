@@ -1,18 +1,20 @@
 import { createContext, useContext, useState } from 'react';
-import { useConfig } from '../context/ConfigContext.jsx';
+import { useDB } from './../context/DbContext.jsx';
 
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
-  const { dbUrl } = useConfig();
-  const [user, setUser] = useState(() => JSON.parse(localStorage.getItem('user')));
+
+  const { getUser, getUserByCredentials } = useDB();
+  const [user, setUser] = useState(null);
 
   const login = async (username, password) => {
-    const res = await fetch(`${dbUrl}/users?username=${username}&password=${password}`);
-    const data = await res.json();
-    if (data.length > 0) {
-      localStorage.setItem('user', JSON.stringify(data[0]));
-      setUser(data[0]);
+
+    const user = await getUserByCredentials(username, password);
+
+    if (user) {
+      localStorage.setItem('user', JSON.stringify(user));
+      setUser(user);
       return true;
     }
     return false;

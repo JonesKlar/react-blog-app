@@ -5,6 +5,7 @@ import { useAuth } from '../context/AuthContext.jsx';
 import PasswordField from '../components/PasswordField.jsx';
 import TextField from './../components/TextField.jsx';
 import { useConfig } from './../context/ConfigContext.jsx';
+import { useDB } from './../context/DbContext.jsx';
 
 function RegisterPage() {
 

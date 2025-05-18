@@ -6,10 +6,14 @@ import SelectField from '../components/SelectField.jsx';
 import SearchField from '../components/SearchField.jsx';
 import LoadingSpinner from '../components/LoadingSpinner.jsx';
 import ArticleCard from './../components/ArticleCard.jsx';
-import { useConfig } from '../context/ConfigContext.jsx';
+// import { useConfig } from '../context/ConfigContext.jsx';
+import { toast } from 'react-toastify';
+import { useDB } from './../context/DbContext.jsx';
 
 function HomePage() {
-    const { dbUrl, webUrl } = useConfig();
+    // const { dbUrl, isProd } = useConfig();
+
+    const { loading, listArticles, listArticlesFiltered } = useDB(); // Get the authenticated user from the DB context
 
     // State to store all articles
     const [articles, setArticles] = useState([]);
@@ -18,7 +22,7 @@ function HomePage() {
     // Reference for the search input field
     const searchInputRef = useRef(null);
     // State to manage loading status
-    const [loading, setLoading] = useState(true);
+    const [isLoading, setLoading] = useState(true);
 
     // Initial values for filters and pagination from URL parameters
     const initialPage = parseInt(searchParams.get('page')) || 1;
@@ -29,26 +33,46 @@ function HomePage() {
     const [search, setSearch] = useState(initialSearch);
     const [category, setCategory] = useState(initialCategory);
     const [currentPage, setCurrentPage] = useState(initialPage);
+    const [view, setView] = useState([]);
     const articlesPerPage = 10; // Number of articles per page
 
     // Fetch all articles from the server
     useEffect(() => {
-        fetch(`${dbUrl}/articles`)
-            .then(res => res.json())
-            .then(data => setArticles(data))
-            .finally(() => setLoading(false)); // Set loading to false after fetching
+        async function fetchArticles() {
+            try {
+                const articleList = await listArticles(); // Fetch articles from the DB context               
+                setArticles(articleList);
+            } catch (error) {
+                toast.error('Error fetching articles:', error); // Log any errors
+            }
+        }
+        fetchArticles();
     }, []);
 
     // Filter articles based on search and category
-    const filtered = articles
-        .filter(a => a.title.toLowerCase().includes(search.toLowerCase())) // Filter by title
-        .filter(a => (category ? a.category === category : true)); // Filter by category
+    // const filtered = articles
+    //     .filter(a => a.title.toLowerCase().includes(search.toLowerCase())) // Filter by title
+    //     .filter(a => (category ? a.category === category : true)); // Filter by category
+
+
+    useEffect(() => {
+        async function filterArticles() {
+            return await listArticles({ category, title: search });
+        }
+        setLoading(true);
+        filterArticles().then((filteredArticles) => {
+            setLoading(false);
+            debugger
+            setView(filteredArticles);
+        });
+
+    }, [category, search, articles, currentPage]);
 
     // Calculate pagination details
-    const totalPages = Math.max(1, Math.ceil(filtered.length / articlesPerPage)); // Total pages
+    const totalPages = Math.max(1, Math.ceil(view.length / articlesPerPage)); // Total pages
     const indexOfLast = currentPage * articlesPerPage; // Index of the last article on the current page
     const indexOfFirst = indexOfLast - articlesPerPage; // Index of the first article on the current page
-    const currentArticles = filtered.slice(indexOfFirst, indexOfLast); // Articles for the current page
+    const currentArticles = view.slice(indexOfFirst, indexOfLast); // Articles for the current page
 
     // Reset current page if it exceeds the total pages after filtering
     useEffect(() => {
@@ -73,7 +97,7 @@ function HomePage() {
         setCurrentPage(1);
         searchInputRef.current?.focus(); // Focus on the search input field
     };
-
+    console.log(`loaidng: ${loading}`)
     // Show loading spinner while articles are being fetched
     if (loading) {
         return (
@@ -82,6 +106,9 @@ function HomePage() {
             </div>
         );
     }
+    // console.log(`view: ${currentArticles.length}`)
+    // console.log(`totalpages: ${totalPages}`);
+    // console.log(`currentpage: ${currentPage}`);
 
     return (
         <div className="space-y-4">
@@ -136,7 +163,7 @@ function HomePage() {
             </div>
 
             {/* Pagination */}
-            {(filtered && filtered.length > articlesPerPage) && (
+            {(view && view.length > articlesPerPage) && (
                 <Pagination
                     totalPages={totalPages} // Total pages
                     currentPage={currentPage} // Current page

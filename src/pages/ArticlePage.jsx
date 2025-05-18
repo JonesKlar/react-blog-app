@@ -1,17 +1,16 @@
 // pages/ArticlePage.jsx
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { useParams, Link } from 'react-router';
 import { useAuth } from '../context/AuthContext.jsx';
 import CommentForm from '../components/CommentForm.jsx';
 import ConfirmDialog from '../components/ConfirmDialog.jsx';
 import LoadingSpinner from '../components/LoadingSpinner.jsx';
 import { toast } from 'react-toastify';
 import NotFound from '../pages/NotFound.jsx';
-import { useConfig } from '../context/ConfigContext.jsx';
-
+import { useDB } from './../context/DbContext.jsx';
 
 export default function ArticlePage() {
-  const { dbUrl, webUrl } = useConfig();
+
   const { id } = useParams(); // Get the article ID from the URL
   const { user } = useAuth(); // Get the authenticated user from the AuthContext
   const [article, setArticle] = useState(null); // State to store the article data
@@ -23,27 +22,48 @@ export default function ArticlePage() {
   const [editingId, setEditingId] = useState(null); // State to track the comment being edited
   const [editContent, setEditContent] = useState(''); // State to store the content of the comment being edited
 
+  const {
+    data,
+    // loading,
+    error,
+    listUsers,
+    getUser,
+    addUser,
+    editUser,
+    removeUser,
+    listArticles,
+    getArticle,
+    addArticle,
+    editArticle,
+    removeArticle,
+    listComments,
+    getComment,
+    getCommentsByArticleId,
+    addComment,
+    editComment,
+    removeComment } = useDB(); // Get the authenticated user from the DB context
+
   // Fetch the article and its comments when the component mounts or the article ID changes
   useEffect(() => {
+
     const load = async () => {
+
       setLoading(true);
       setNotFound(false);
+      let dataArticle = null;
+      let dataComments = null;
+
       try {
-        // Fetch the article data
-        const resA = await fetch(`${dbUrl}/articles/${id}`);
-        if (resA.status === 404) {
+        dataArticle = await getArticle(parseInt(id)); // Fetch the article data
+        dataComments = data.comments.filter(c => c.articleId === parseInt(id));
+        if (!dataArticle) {
           setNotFound(true); // Set notFound to true if the article is not found
           return;
         }
-        const dataArticle = await resA.json();
-
-        // Fetch the comments for the article
-        const resC = await fetch(`${dbUrl}/comments?articleId=${id}`);
-        const dataComments = await resC.json();
-
-        setArticle(dataArticle); // Set the article data
-        setComments(dataComments); // Set the comments
-      } catch {
+        await setArticle(dataArticle); // Set the article data
+        await setComments(dataComments); // Set the comments
+      } catch (error) {
+        toast.error(`Fehler beim Laden des Artikels: ${error}`); // Show error toast
         setNotFound(true); // Handle errors by showing the NotFound page
       } finally {
         setLoading(false); // Stop the loading spinner
@@ -62,21 +82,15 @@ export default function ArticlePage() {
       content: content.trim(),
     };
 
-    const res = await fetch(`${dbUrl}/comments`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(newComment),
-    });
-
-    if (!res.ok) {
-      toast.error('Kommentar konnte nicht gespeichert werden.'); // Show error toast
+    try {
+      await addComment(newComment);
+      toast.success('Kommentar hinzugefügt.'); // Show success toast
+    } catch (error) {
+      toast.error('Fehler beim Speichern des Kommentars: ' + error); // Show error toast
       return;
     }
 
-    const saved = await res.json();
-    setComments(prev => [...prev, saved]); // Add the new comment to the state
-    toast.success('Kommentar hinzugefügt.'); // Show success toast
-  };
+  }; // handleAddComment
 
   // Handle clicking the delete button for a comment
   const handleDeleteClick = (cid) => {
@@ -86,8 +100,7 @@ export default function ArticlePage() {
 
   // Confirm and delete the selected comment
   const confirmDelete = async () => {
-    await fetch(`${dbUrl}/comments/${commentToDelete}`, { method: 'DELETE' });
-    setComments(prev => prev.filter(c => c.id !== commentToDelete)); // Remove the deleted comment from the state
+    await removeComment(commentToDelete); // Remove the comment from the database
     setConfirmOpen(false); // Close the confirmation dialog
     toast.success('Kommentar gelöscht.'); // Show success toast
   };
@@ -100,17 +113,13 @@ export default function ArticlePage() {
 
   // Save the edited comment
   const handleEditSave = async (cid) => {
-    const res = await fetch(`${dbUrl}/comments/${cid}`, {
-      method: 'PATCH',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ content: editContent }),
-    });
-    const updated = await res.json();
-    setComments(prev =>
-      prev.map(c => (c.id === cid ? { ...c, content: updated.content } : c)) // Update the comment in the state
-    );
-    setEditingId(null); // Clear the editing state
-    toast.info('Kommentar aktualisiert.'); // Show info toast
+    try {
+      await editComment(cid, { content: editContent }); // Update the comment in the database    
+      setEditingId(null); // Clear the editing state
+      toast.info('Kommentar aktualisiert.'); // Show info toast
+    } catch (error) {
+      toast.error('Fehler beim Aktualisieren des Kommentars: ' + error); // Show error toast
+    }
   };
 
   // Show a loading spinner while the article is being fetched
@@ -192,9 +201,15 @@ export default function ArticlePage() {
         {user ? (
           <CommentForm articleId={id} onAddComment={handleAddComment} />
         ) : (
-          <p className="text-gray-500">
-            Bitte <a href="/login" className="text-primary underline">einloggen</a>, um zu kommentieren.
-          </p>
+          // <p className="text-gray-500">
+          //   Bitte <a href="/login" className="text-primary underline">einloggen</a>, um zu kommentieren.
+          // </p>
+          <Link
+            to={`/login`}
+            className="btn btn-sm btn-outline text-sm"
+          >
+            Bitte einloggen, um zu kommentieren
+          </Link>
         )}
       </section>
 

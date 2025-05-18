@@ -5,32 +5,40 @@ import ConfirmDialog from '../components/ConfirmDialog.jsx';
 import LoadingSpinner from '../components/LoadingSpinner.jsx';
 import { toast } from 'react-toastify';
 import SearchField from '../components/SearchField.jsx';
-import { useConfig } from '../context/ConfigContext.jsx';
-
+import { useDB } from './../context/DbContext.jsx';
+import { list } from 'postcss';
 
 export default function AdminCommentModerationPage() {
 
-  const { dbUrl, webUrl } = useConfig();
   const { user } = useAuth();
   const [comments, setComments] = useState([]);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState('');
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [selectedId, setSelectedId] = useState(null);
+  const { listComments, removeComment, data } = useDB();
 
   if (!user || user.username !== 'admin') return <Navigate to="/" replace />;
 
   useEffect(() => {
-    fetchComments();
+    try {
+      setLoading(true);
+      fetchComments();
+    } catch (error) {
+      toast.error('Fehler beim Laden der Kommentare.');
+    } finally {
+      setLoading(false);
+    }
   }, []);
 
 
   const fetchComments = async () => {
-    setLoading(true);
-    const res = await fetch(`${dbUrl}/comments`);
-    const data = await res.json();
+    const data = await listComments();
+    if (!data) {
+      toast.error('Fehler beim Laden der Kommentare.');       
+      return;
+    }
     setComments(data);
-    setLoading(false);
   };
 
   const handleDeleteClick = (id) => {
@@ -39,13 +47,17 @@ export default function AdminCommentModerationPage() {
   };
 
   const confirmDelete = async () => {
-    await fetch(`${dbUrl}/comments/${selectedId}`, {
-      method: 'DELETE',
-    });
-    setComments(prev => prev.filter(c => c.id !== selectedId));
-    setConfirmOpen(false);
-    setSelectedId(null);
-    toast.success('Kommentar gelöscht.');
+    try {
+      await removeComment(selectedId);
+      setComments(prev => prev.filter(c => c.id !== selectedId));
+      toast.success('Kommentar gelöscht.');
+    } catch (error) {
+      toast.error(`Fehler beim Löschen des Kommentars: ${error}`);
+    } finally {
+      setConfirmOpen(false);
+      setSelectedId(null);
+      setLoading(false);
+    }
   };
 
   const filtered = comments.filter(c =>

@@ -4,11 +4,10 @@ import { useNavigate, Navigate } from 'react-router';
 import { useAuth } from '../context/AuthContext.jsx';
 import PasswordField from '../components/PasswordField.jsx';
 import TextField from './../components/TextField.jsx';
-import {useConfig} from './../context/ConfigContext.jsx';
+ 
 
 function LoginPage() {
-
-    const { dbUrl, webUrl } = useConfig();
+ 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
