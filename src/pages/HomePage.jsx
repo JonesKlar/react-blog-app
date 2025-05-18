@@ -43,14 +43,14 @@ function HomePage() {
                 // const articleList = await listArticles(); // Fetch articles from the DB context               
                 // setArticles(articleList);
                 !loading && setArticles(data.articles);
-                console.log(articleList);
+            
 
             } catch (error) {
                 toast.error('Error fetching articles:', error); // Log any errors
             }
         }
         fetchArticles();
-    }, [loading, data.articles]);
+    }, [loading]);
 
     // Filter articles based on search and category
     // const filtered = articles
