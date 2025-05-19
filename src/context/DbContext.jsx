@@ -188,6 +188,16 @@ export function DBProvider({ children }) {
           data.users.find(u => u.username === username && u.password === password) || null
         )
       },
+      getUserByName: (username) => {
+        if (isDev) {
+          return fetch(`${apiDbUrl}/users?username=${username}`)
+            .then(r => r.json())
+            .then(arr => arr[0] || null)
+        }
+        return Promise.resolve(
+          data.users.find(u => u.username === username) || null
+        )
+      },
       addUser: user => callApi({ method: 'POST', path: 'users', body: user }),
       editUser: (id, changes) => callApi({ method: 'PUT', path: `users/${id}`, body: changes }),
       removeUser: id => callApi({ method: 'DELETE', path: `users/${id}` }),

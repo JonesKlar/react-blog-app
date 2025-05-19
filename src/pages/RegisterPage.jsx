@@ -4,12 +4,12 @@ import { useNavigate, Navigate } from 'react-router';
 import { useAuth } from '../context/AuthContext.jsx';
 import PasswordField from '../components/PasswordField.jsx';
 import TextField from './../components/TextField.jsx';
-import { useConfig } from './../context/ConfigContext.jsx';
 import { useDB } from './../context/DbContext.jsx';
+import { toast } from 'react-toastify';
 
 function RegisterPage() {
 
-    const { dbUrl, webUrl } = useConfig();
+    const { getUserByName, addUser } = useDB();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -23,21 +23,19 @@ function RegisterPage() {
 
     const handleRegister = async (e) => {
         e.preventDefault();
-        const res = await fetch(`${dbUrl}/users?username=${username}`);
-        debugger
-        const existing = await res.json();
-        if (existing.length > 0) {
-            setError('Benutzername ist bereits vergeben.');
-            return;
-        }
+        try {
+            const user = await getUserByName(username);
 
-        const newUser = { id: Date.now(), username, password };
-        await fetch(`${dbUrl}/users`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(newUser)
-        });
-        setSuccess(true);
+            if (user)
+                setError('Benutzername ist bereits vergeben.'); return;
+
+            const newUser = { username, password };
+            await addUser(newUser);
+            setSuccess(true);
+        } catch (error) {
+            toast.error('Fehler bei der Registrierung:', error);
+            setError('Fehler bei der Registrierung.');
+        }
         setTimeout(() => {
             debugger
             navigate('/login')
