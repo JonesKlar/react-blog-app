@@ -43,8 +43,6 @@ function HomePage() {
                 // const articleList = await listArticles(); // Fetch articles from the DB context               
                 // setArticles(articleList);
                 !loading && setArticles(data.articles);
-
-
             } catch (error) {
                 toast.error('Error fetching articles:', error); // Log any errors
             }
@@ -99,7 +97,7 @@ function HomePage() {
         setCurrentPage(1);
         searchInputRef.current?.focus(); // Focus on the search input field
     };
-    console.log(`loaidng: ${loading}`)
+    console.log(`loading: ${loading}`)
     // Show loading spinner while articles are being fetched
     if (loading) {
         return (
