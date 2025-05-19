@@ -9,6 +9,10 @@ export default {
     ],
     theme: {
         extend: {
+            screens: {
+                // “mobile” applies to any width ≤ 400px. That gives you a “mobile:” prefix you can use in your utility classes.
+                'mobile': { 'max': '400px' },
+            },
             animation: {
                 'fade-in': 'fadeIn 0.5s ease-in-out',
             },

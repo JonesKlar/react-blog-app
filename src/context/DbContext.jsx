@@ -37,13 +37,16 @@ export function DBProvider({ children }) {
   const callApi = async ({ method, path, body }) => {
 
     if (isDev) {
+      
       const res = await fetch(`${apiDbUrl}/${path}`, {
         method,
         headers: { 'Content-Type': 'application/json' },
         body: body ? JSON.stringify(body) : undefined
       })
+
       if (!res.ok) throw new Error(`${method} ${path} failed: ${res.status}`)
       if (method === 'DELETE') return null
+      console.log(res.json())
       return res.json()
     }
 
