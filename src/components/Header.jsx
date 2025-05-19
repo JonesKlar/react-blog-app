@@ -11,7 +11,7 @@ function Header() {
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
-          <li><Link to="/">Startseite</Link></li>
+          {/* <li><Link to="/">Startseite</Link></li> */}
           {user?.username === 'admin' && (
             <li><Link to="/admin/comments">Kommentare</Link></li>
           )}
