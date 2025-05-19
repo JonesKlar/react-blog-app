@@ -43,7 +43,7 @@ function HomePage() {
                 // const articleList = await listArticles(); // Fetch articles from the DB context               
                 // setArticles(articleList);
                 !loading && setArticles(data.articles);
-            
+
 
             } catch (error) {
                 toast.error('Error fetching articles:', error); // Log any errors
@@ -65,7 +65,6 @@ function HomePage() {
         setLoading(true);
         filterArticles().then((filteredArticles) => {
             setLoading(false);
-            debugger
             setView(filteredArticles);
         });
 

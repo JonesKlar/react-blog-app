@@ -50,7 +50,7 @@ export function DBProvider({ children }) {
     // PROD: use in-memory CRUD
     if (!path) throw new Error('Path is required for in-memory CRUD')
     const [resource, id] = path.split('/')
-    debugger
+  
     switch (resource) {
       case 'users': return inMemoryCRUD('users', id, method, body)
       case 'articles': return inMemoryCRUD('articles', id, method, body)
@@ -149,7 +149,7 @@ export function DBProvider({ children }) {
             idbGet('articles'),
             idbGet('comments')
           ])
-          debugger
+          
           if (users.length || articles.length || comments.length) {
             json = { users, articles, comments }
           } else {

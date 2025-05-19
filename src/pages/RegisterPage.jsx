@@ -37,7 +37,6 @@ function RegisterPage() {
             setError('Fehler bei der Registrierung.');
         }
         setTimeout(() => {
-            debugger
             navigate('/login')
         }, 1500);
     };

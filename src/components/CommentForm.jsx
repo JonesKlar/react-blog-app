@@ -11,7 +11,7 @@ export default function CommentForm({ articleId, onAddComment }) {
 
         e.preventDefault();
         console.log('Form submitted');
-debugger
+
         if (!content.trim()) {
             setError('Kommentar darf nicht leer sein.');
             return;
