@@ -12,15 +12,25 @@ export default function AdminCommentModerationPage() {
 
   const { user } = useAuth();
   const [comments, setComments] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(true);
   const [filter, setFilter] = useState('');
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [selectedId, setSelectedId] = useState(null);
-  const { listComments, removeComment, data } = useDB();
+  const { listComments, removeComment, data, loading } = useDB();
 
   if (!user || user.username !== 'admin') return <Navigate to="/" replace />;
 
   useEffect(() => {
+
+    if (loading) {
+      setLoading(true);
+      setComments([]);
+      setFilter('');
+      setConfirmOpen(false);
+      setSelectedId(null);
+      return;
+    }
+
     try {
       setLoading(true);
       fetchComments();
@@ -29,13 +39,13 @@ export default function AdminCommentModerationPage() {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [loading]);
 
 
   const fetchComments = async () => {
     const data = await listComments();
     if (!data) {
-      toast.error('Fehler beim Laden der Kommentare.');       
+      toast.error('Fehler beim Laden der Kommentare.');
       return;
     }
     setComments(data);
@@ -76,7 +86,7 @@ export default function AdminCommentModerationPage() {
         delay={300}
       />
 
-      {loading ? (
+      {isLoading ? (
         <LoadingSpinner />
       ) : (
         <div className="mt-4 space-y-4">
