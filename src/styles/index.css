@@ -10,3 +10,22 @@
     --toastify-toast-width: 61% !important;
   }
 }
+
+/* 1) Never show horizontal scrollbars */
+html, body {
+  overflow-x: hidden;
+}
+
+/* 2) Disable overscroll (rubber-band) on supporting browsers */
+html, body {
+  overscroll-behavior-y: none;    /* no vertical bounce */
+  overscroll-behavior-x: none;    /* no horizontal bounce */
+}
+
+/* 3) Only allow vertical panning/touching */
+#root, /* or your top‐level container */  
+.App {
+  touch-action: pan-y;
+}
+
+ 
