@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
+ 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -31,6 +31,9 @@ jobs:
 
       - name: Build production bundle
         run: npm run build   # → outputs into dist/
+      - name: Copy 404 fallback   # or use cpy-cli on Windows runners
+        run: |
+          cp dist/index.html dist/404.html     
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
@@ -43,9 +46,7 @@ jobs:
     environment:
       name: github-pages   # special environment for Pages
     steps:
-      - name: Copy 404 fallback   # or use cpy-cli on Windows runners
-        run: |
-          cp dist/index.html dist/404.html     
+    
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         id: deploy-pages
