@@ -15,7 +15,7 @@ export default function ArticlePage() {
   const { user } = useAuth(); // Get the authenticated user from the AuthContext
   const [article, setArticle] = useState(null); // State to store the article data
   const [comments, setComments] = useState([]); // State to store the comments
-  const [loading, setLoading] = useState(true); // State to manage loading status
+  const [isLoading, setLoading] = useState(true); // State to manage loading status
   const [notFound, setNotFound] = useState(false); // State to handle 404 errors
   const [confirmOpen, setConfirmOpen] = useState(false); // State to manage the confirmation dialog
   const [commentToDelete, setCommentToDelete] = useState(null); // State to track the comment to delete
@@ -24,7 +24,7 @@ export default function ArticlePage() {
 
   const {
     data,
-    // loading,
+    loading,
     error,
     listUsers,
     getUser,
@@ -45,6 +45,9 @@ export default function ArticlePage() {
 
   // Fetch the article and its comments when the component mounts or the article ID changes
   useEffect(() => {
+
+      // only run once the DBProvider has finished loading!
+    if (loading) return
 
     const load = async () => {
 
@@ -70,7 +73,7 @@ export default function ArticlePage() {
       }
     };
     load();
-  }, [id]);
+  }, [loading, id, getArticle, data.comments]);
 
   // Handle adding a new comment
   const handleAddComment = async (content) => {
@@ -123,7 +126,7 @@ export default function ArticlePage() {
   };
 
   // Show a loading spinner while the article is being fetched
-  if (loading) {
+  if (isLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <LoadingSpinner message="Artikel wird geladen..." size="lg" />
