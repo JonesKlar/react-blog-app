@@ -11,6 +11,8 @@ import { useDB } from './../context/DbContext.jsx';
 
 export default function ArticlePage() {
 
+  const isDev = import.meta.env.DEV
+
   const { id } = useParams(); // Get the article ID from the URL
   const { user } = useAuth(); // Get the authenticated user from the AuthContext
 
@@ -20,15 +22,15 @@ export default function ArticlePage() {
   const [isLoading, setLoading] = useState(true); // State to manage loading status
   const [notFound, setNotFound] = useState(false); // State to handle 404 errors
   const [confirmOpen, setConfirmOpen] = useState(false); // State to manage the confirmation dialog
-  const [commentToDelete, setCommentToDelete] = useState(null); // State to track the comment to delete
+  const [commentIdToBeDeleted, setCommentIdToBeDeleted] = useState(null); // State to track the comment to delete
   const [editingId, setEditingId] = useState(null); // State to track the comment being edited
   const [editContent, setEditContent] = useState(''); // State to store the content of the comment being edited
 
   const {
     data,
     loading,
-    error,    
-    getArticle,     
+    error,
+    getArticle,
     listComments,
     getComment,
     getCommentsByArticleId,
@@ -39,7 +41,7 @@ export default function ArticlePage() {
   // Fetch the article and its comments when the component mounts or the article ID changes
   useEffect(() => {
 
-      // only run once the DBProvider has finished loading!
+    // only run once the DBProvider has finished loading!
     if (loading) return
 
     const load = async () => {
@@ -79,9 +81,13 @@ export default function ArticlePage() {
     };
 
     try {
-      const serverComment = await addComment(newComment);
-      // setComments(prev => [...prev, serverComment]); // Add the new comment to the state
-      // setEditingId(null); // Clear the editing state
+      const updatedComment = await addComment(newComment);
+
+      if (isDev) {
+        setComments(prev => [...prev, updatedComment]); // Add the new comment to the state
+        setEditingId(null); // Clear the editing state
+      }
+
       toast.success('Kommentar hinzugefügt.'); // Show success toast
     } catch (error) {
       toast.error('Fehler beim Speichern des Kommentars: ' + error); // Show error toast
@@ -92,15 +98,25 @@ export default function ArticlePage() {
 
   // Handle clicking the delete button for a comment
   const handleDeleteClick = (cid) => {
-    setCommentToDelete(cid); // Set the comment to delete
+    setCommentIdToBeDeleted(cid); // Set the comment to delete
     setConfirmOpen(true); // Open the confirmation dialog
   };
 
   // Confirm and delete the selected comment
   const confirmDelete = async () => {
-    await removeComment(commentToDelete); // Remove the comment from the database
-    setConfirmOpen(false); // Close the confirmation dialog
-    toast.success('Kommentar gelöscht.'); // Show success toast
+    try {
+      await removeComment(commentIdToBeDeleted); // Remove the comment from the 
+      if (isDev) {
+        
+        setComments(prev => prev.map(c => c.id !== commentIdToBeDeleted)); // Add the new comment to the state
+        setEditingId(null); // Clear the editing state
+        toast.success('Kommentar gelöscht.'); // Show success toast
+      }
+    } catch (error) {
+      toast.error('Fehler beim Löschen des Kommentars: ' + error); // Show error toast
+    } finally {
+      setConfirmOpen(false); // Close the confirmation dialog
+    }
   };
 
   // Handle clicking the edit button for a comment
@@ -112,7 +128,11 @@ export default function ArticlePage() {
   // Save the edited comment
   const handleEditSave = async (cid) => {
     try {
-      await editComment(cid, { content: editContent }); // Update the comment in the database    
+      const updatedComment = await editComment(cid, { content: editContent }); // Update the comment in the database    
+      if (isDev) {
+        // setComments(prev => [...prev, updatedComment]); // Add the new comment to the state
+        setComments(prev => prev.map(c => (c.id === cid ? updatedComment : c)))
+      }
       setEditingId(null); // Clear the editing state
       toast.info('Kommentar aktualisiert.'); // Show info toast
     } catch (error) {
@@ -199,7 +219,7 @@ export default function ArticlePage() {
         {user ? (
           <CommentForm articleId={id} onAddComment={handleAddComment} />
         ) : (
-         
+
           <Link
             to={`/login`}
             className="btn btn-sm btn-outline text-sm"
