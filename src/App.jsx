@@ -24,7 +24,7 @@ function App() {
     <ConfigProvider>
       <DBProvider>
         <AuthProvider>
-          <div className="scroll-container">
+      
             {/* Provide authentication context to the entire app */}
             <Router basename={basename}>
               {/* React Router to handle navigation */}
@@ -62,7 +62,7 @@ function App() {
             />
             <ScrollToTopBadge />
             {/* Component to display a badge for scrolling to the top */}
-          </div>
+          
         </AuthProvider>
       </DBProvider>
     </ConfigProvider>

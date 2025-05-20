@@ -11,7 +11,8 @@ export default {
         extend: {
             screens: {
                 // “mobile” applies to any width ≤ 400px. That gives you a “mobile:” prefix you can use in your utility classes.
-                'mobile': { 'max': '400px' },
+                xs: '480px', /* Custom small screen */
+                'mobile': { max: '480px' },
             },
             animation: {
                 'fade-in': 'fadeIn 0.5s ease-in-out',

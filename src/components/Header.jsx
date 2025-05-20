@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import { FiMenu, FiX } from 'react-icons/fi'
 import { useAuth } from '../context/AuthContext.jsx'
 
-function Header() {
+export default function Header() {
   const { user, logout } = useAuth()
   const [open, setOpen] = useState(false)
 
@@ -15,8 +15,8 @@ function Header() {
         </Link>
       </div>
 
-      {/* Desktop Menu: hidden on mobile (<=400px) */}
-      <div className="flex-none hidden mobile:flex">
+      {/* Desktop Menu: flex by default, hidden on screens ≤480px */}
+      <div className="flex-none flex max-[480px]:hidden">
         <ul className="menu menu-horizontal px-1">
           {user?.username === 'admin' && (
             <li>
@@ -45,8 +45,8 @@ function Header() {
         </ul>
       </div>
 
-      {/* Mobile Hamburger: visible on mobile */}
-      <div className="flex-none mobile:hidden">
+      {/* Mobile Hamburger: hidden by default, visible on screens ≤480px */}
+      <div className="flex-none hidden max-[480px]:flex">
         <button
           onClick={() => setOpen(prev => !prev)}
           aria-label="Toggle menu"
@@ -56,9 +56,9 @@ function Header() {
         </button>
       </div>
 
-      {/* Mobile Menu Drawer: show when open */}
+      {/* Mobile Menu Drawer: show when open, only on screens ≤480px */}
       {open && (
-        <div className="absolute top-full left-0 w-full bg-base-200 shadow-md z-50 mobile:hidden">
+        <div className="absolute top-full left-0 w-full bg-base-200 shadow-md z-50 hidden max-[480px]:flex">
           <ul className="menu menu-vertical p-4 space-y-2">
             {user?.username === 'admin' && (
               <li>
@@ -103,5 +103,3 @@ function Header() {
     </nav>
   )
 }
-
-export default Header

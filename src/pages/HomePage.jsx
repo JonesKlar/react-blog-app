@@ -155,7 +155,7 @@ function HomePage() {
                     />
                 </div>
                 {/* Reset filters button */}
-                <div>
+                <div className='flex xs:justify-end'>
                     <button onClick={resetFilters} className="btn btn-outline mt-4 md:m-0">
                         Zurücksetzen
                     </button>
