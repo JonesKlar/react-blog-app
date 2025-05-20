@@ -17,7 +17,7 @@ import { DBProvider } from './context/DbContext.jsx';
 // Command to start a JSON server for development purposes
 
 function App() {
-  console.log('React läuft'); // Debugging log to confirm the app is running
+  
   const basename = import.meta.env.BASE_URL // set in vite.config.js or via cli also
   // alert(basename); // Log the base URL for the application
   return (

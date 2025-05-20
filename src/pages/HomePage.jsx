@@ -97,7 +97,7 @@ function HomePage() {
         setCurrentPage(1);
         searchInputRef.current?.focus(); // Focus on the search input field
     };
-    console.log(`loading: ${loading}`)
+    // console.log(`loading: ${loading}`)
     // Show loading spinner while articles are being fetched
     if (loading) {
         return (

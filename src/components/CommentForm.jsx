@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useAuth } from '../context/AuthContext.jsx';
+import { toast } from 'react-toastify';
 
 export default function CommentForm({ articleId, onAddComment }) {
 
@@ -10,7 +11,7 @@ export default function CommentForm({ articleId, onAddComment }) {
     const handleSubmit = async (e) => {
 
         e.preventDefault();
-        console.log('Form submitted');
+        // console.log('Form submitted');
 
         if (!content.trim()) {
             setError('Kommentar darf nicht leer sein.');
@@ -18,11 +19,11 @@ export default function CommentForm({ articleId, onAddComment }) {
         }
         try {
             await onAddComment(content.trim());
-            console.log('Kommentar wurde erfolgreich übergeben');
+            // console.log('Kommentar wurde erfolgreich übergeben');
             setContent('');
             setError('');
         } catch (err) {
-            console.error('Fehler beim Hinzufügen:', err);
+            toast.error('Fehler beim Hinzufügen:', err);
             setError('Fehler beim Hinzufügen des Kommentars.');
         }
     };

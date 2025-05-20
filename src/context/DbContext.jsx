@@ -207,7 +207,7 @@ export function DBProvider({ children }) {
 
       listArticles: filter => callApi({ method: 'GET', path: 'articles' }).then(arts => {
         let results = arts
-        console.log('listArticles', arts)
+        // console.log('listArticles', arts)
         if (filter?.category) {
           results = results.filter(a =>
             a.category.toLowerCase().includes(filter.category.toLowerCase())

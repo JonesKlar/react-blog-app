@@ -58,8 +58,8 @@ export default function ArticlePage() {
           setNotFound(true); // Set notFound to true if the article is not found
           return;
         }
-        await setArticle(dataArticle); // Set the article data
-        await setComments(dataComments); // Set the comments
+        setArticle(dataArticle); // Set the article data
+        setComments(dataComments); // Set the comments
       } catch (error) {
         toast.error(`Fehler beim Laden des Artikels: ${error}`); // Show error toast
         setNotFound(true); // Handle errors by showing the NotFound page
@@ -107,8 +107,9 @@ export default function ArticlePage() {
     try {
       await removeComment(commentIdToBeDeleted); // Remove the comment from the 
       if (isDev) {
-        
-        setComments(prev => prev.map(c => c.id !== commentIdToBeDeleted)); // Add the new comment to the state
+        // setComments(prev => prev.map(c => c.id !== commentIdToBeDeleted)); // Add the new comment to the state
+        setComments(prev => prev.filter(c => c.id !== commentIdToBeDeleted));
+
         setEditingId(null); // Clear the editing state
         toast.success('Kommentar gelöscht.'); // Show success toast
       }
@@ -153,6 +154,7 @@ export default function ArticlePage() {
   if (notFound) {
     return <NotFound />;
   }
+  console.log(comments);
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-6">
