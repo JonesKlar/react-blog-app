@@ -4,7 +4,7 @@
 @import './App.css';
 
 @theme {
-  /*we add a new breakpoint here xs = 480px */
+  /*we add a new breakpoint here xs = 480px, 1rem = 16px */
   --breakpoint-xs: 30rem;
 }
 
