@@ -4,6 +4,7 @@ import { FiMenu, FiX } from 'react-icons/fi'
 import { useAuth } from '../context/AuthContext.jsx'
 
 export default function Header() {
+
   const { user, logout } = useAuth()
   const [open, setOpen] = useState(false)
   const mobileRef = useRef(null)
@@ -58,7 +59,7 @@ export default function Header() {
         </ul>
       </div>
 
-      {/* Mobile Hamburger: visible on screens <480px */}
+      {/* Mobile Hamburger: hiiden wehn screen wider than > 480px */}
       <div className="flex-none flex xs:hidden">
         <button
           onClick={() => setOpen(prev => !prev)}
@@ -69,7 +70,7 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile Menu Drawer: show when open, only on mobile <480px */}
+      {/* Mobile Menu Drawer: show when open, hidden starting from xs */}
       {open && (
         <div className="absolute top-full left-0 w-full bg-base-200 shadow-md z-50 flex xs:hidden">
           <ul className="menu menu-vertical p-4 space-y-2">

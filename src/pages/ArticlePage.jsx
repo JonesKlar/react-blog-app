@@ -13,6 +13,8 @@ export default function ArticlePage() {
 
   const { id } = useParams(); // Get the article ID from the URL
   const { user } = useAuth(); // Get the authenticated user from the AuthContext
+
+  // useState hooks
   const [article, setArticle] = useState(null); // State to store the article data
   const [comments, setComments] = useState([]); // State to store the comments
   const [isLoading, setLoading] = useState(true); // State to manage loading status
@@ -25,17 +27,8 @@ export default function ArticlePage() {
   const {
     data,
     loading,
-    error,
-    listUsers,
-    getUser,
-    addUser,
-    editUser,
-    removeUser,
-    listArticles,
-    getArticle,
-    addArticle,
-    editArticle,
-    removeArticle,
+    error,    
+    getArticle,     
     listComments,
     getComment,
     getCommentsByArticleId,
@@ -86,7 +79,9 @@ export default function ArticlePage() {
     };
 
     try {
-      await addComment(newComment);
+      const serverComment = await addComment(newComment);
+      // setComments(prev => [...prev, serverComment]); // Add the new comment to the state
+      // setEditingId(null); // Clear the editing state
       toast.success('Kommentar hinzugefügt.'); // Show success toast
     } catch (error) {
       toast.error('Fehler beim Speichern des Kommentars: ' + error); // Show error toast
@@ -204,9 +199,7 @@ export default function ArticlePage() {
         {user ? (
           <CommentForm articleId={id} onAddComment={handleAddComment} />
         ) : (
-          // <p className="text-gray-500">
-          //   Bitte <a href="/login" className="text-primary underline">einloggen</a>, um zu kommentieren.
-          // </p>
+         
           <Link
             to={`/login`}
             className="btn btn-sm btn-outline text-sm"
