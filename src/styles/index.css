@@ -3,6 +3,11 @@
 @import 'react-toastify/dist/ReactToastify.css';
 @import './App.css';
 
+@theme {
+  /*we add a new breakpoint here xs = 480px */
+  --breakpoint-xs: 30rem;
+}
+
 /* override React-Toastify’s full-width on very small screens */
 @media (max-width: 480px) {
   .Toastify__toast {
