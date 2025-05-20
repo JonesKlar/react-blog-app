@@ -46,7 +46,7 @@ export function DBProvider({ children }) {
 
       if (!res.ok) throw new Error(`${method} ${path} failed: ${res.status}`)
       if (method === 'DELETE') return null
-      console.log(res.json())
+      
       return res.json()
     }
 
