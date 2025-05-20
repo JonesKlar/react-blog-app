@@ -11,6 +11,22 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Works in modern browsers */
+.scroll-container {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+
+
 /* 1) Never show horizontal scrollbars */
 html, body {
   overflow-x: hidden;
