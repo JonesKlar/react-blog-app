@@ -36,8 +36,12 @@ export function DBProvider({ children }) {
   // Generic API caller
   const callApi = async ({ method, path, body }) => {
 
-    if (isDev) {
-      
+    if (isDev) { // DEV - MODE
+
+      if (!path) throw new Error('Path is required for API calls')
+
+      console.log(`Calling API: ${method} ${path}`, body);
+
       const res = await fetch(`${apiDbUrl}/${path}`, {
         method,
         headers: { 'Content-Type': 'application/json' },
@@ -46,14 +50,15 @@ export function DBProvider({ children }) {
 
       if (!res.ok) throw new Error(`${method} ${path} failed: ${res.status}`)
       if (method === 'DELETE') return null
-      
-      return res.json()
-    }
+      let json = await res.json()
+      console.log(json);
+      return json
+    } // dev
 
     // PROD: use in-memory CRUD
     if (!path) throw new Error('Path is required for in-memory CRUD')
     const [resource, id] = path.split('/')
-  
+
     switch (resource) {
       case 'users': return inMemoryCRUD('users', id, method, body)
       case 'articles': return inMemoryCRUD('articles', id, method, body)
@@ -89,41 +94,38 @@ export function DBProvider({ children }) {
     return item || null
   }
 
-  // In-memory & IndexedDB CRUD specifically for comments
-  async function inMemoryCommentCRUD(id, body, method) {
-    let newComment, updatedComments, updatedArticles
+
+  // production only: In-memory & IndexedDB CRUD specifically for comments
+  async function inMemoryCommentCRUD(commentId, body, method) {
+    let newComment, updatedComments
+
     switch (method) {
       case 'GET':
-        return id ? data.comments.find(c => c.id === id) : data.comments
+        return commentId
+          ? data.comments.find(c => c.id === commentId)
+          : data.comments
+
       case 'POST':
         newComment = { id: uuid(), ...body }
         updatedComments = [...data.comments, newComment]
-        updatedArticles = data.articles.map(a =>
-          a.id === newComment.articleId
-            ? { ...a, comments: [...a.comments, { id: newComment.id, author: newComment.author, content: newComment.content }] }
-            : a
-        )
-        setData(prev => ({ ...prev, comments: updatedComments, articles: updatedArticles }))
+        setData(prev => ({ ...prev, comments: updatedComments }))
         await idbSet('comments', updatedComments)
-        await idbSet('articles', updatedArticles)
         return newComment
+
       case 'PUT':
-        updatedComments = data.comments.map(c => c.id === id ? { ...c, ...body } : c)
-        updatedArticles = data.articles.map(a => ({
-          ...a,
-          comments: a.comments.map(c => c.id === id ? { ...c, ...body } : c)
-        }))
-        setData(prev => ({ ...prev, comments: updatedComments, articles: updatedArticles }))
+        updatedComments = data.comments.map(c =>
+          c.id === commentId ? { ...c, ...body } : c
+        )
+        setData(prev => ({ ...prev, comments: updatedComments }))
         await idbSet('comments', updatedComments)
-        await idbSet('articles', updatedArticles)
-        return updatedComments.find(c => c.id === id)
+        return updatedComments.find(c => c.id === commentId)
+
       case 'DELETE':
-        updatedComments = data.comments.filter(c => c.id !== id)
-        updatedArticles = data.articles.map(a => ({ ...a, comments: a.comments.filter(c => c.id !== id) }))
-        setData(prev => ({ ...prev, comments: updatedComments, articles: updatedArticles }))
+        updatedComments = data.comments.filter(c => c.id !== commentId)
+        setData(prev => ({ ...prev, comments: updatedComments }))
         await idbSet('comments', updatedComments)
-        await idbSet('articles', updatedArticles)
         return null
+
       default:
         throw new Error(`Unsupported method: ${method}`)
     }
@@ -152,7 +154,7 @@ export function DBProvider({ children }) {
             idbGet('articles'),
             idbGet('comments')
           ])
-          
+
           if (users.length || articles.length || comments.length) {
             json = { users, articles, comments }
           } else {

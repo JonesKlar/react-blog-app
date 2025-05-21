@@ -84,7 +84,14 @@ export default function ArticlePage() {
       const updatedComment = await addComment(newComment);
 
       if (isDev) {
-        setComments(prev => [...prev, updatedComment]); // Add the new comment to the state
+        // setComments(prev => prev.map(c => c.id === updatedComment.id ? updatedComment : c));
+
+        async function loadComments() {
+          const data = await getCommentsByArticleId(parseInt(id));
+          setComments(data);
+        }
+        loadComments();
+        // setComments(data.comments)
         setEditingId(null); // Clear the editing state
       }
 
@@ -98,6 +105,7 @@ export default function ArticlePage() {
 
   // Handle clicking the delete button for a comment
   const handleDeleteClick = (cid) => {
+
     setCommentIdToBeDeleted(cid); // Set the comment to delete
     setConfirmOpen(true); // Open the confirmation dialog
   };
@@ -105,7 +113,7 @@ export default function ArticlePage() {
   // Confirm and delete the selected comment
   const confirmDelete = async () => {
     try {
-      await removeComment(commentIdToBeDeleted); // Remove the comment from the 
+      await removeComment(commentIdToBeDeleted); // delete comment
       if (isDev) {
         // setComments(prev => prev.map(c => c.id !== commentIdToBeDeleted)); // Add the new comment to the state
         setComments(prev => prev.filter(c => c.id !== commentIdToBeDeleted));
@@ -129,10 +137,23 @@ export default function ArticlePage() {
   // Save the edited comment
   const handleEditSave = async (cid) => {
     try {
-      const updatedComment = await editComment(cid, { content: editContent }); // Update the comment in the database    
+      let commentToBeUpdated = { content: editContent }
+
+      if (isDev) {
+        const originalComment = await getComment(cid)
+        commentToBeUpdated = { ...originalComment, content: editContent }
+      }
+
+      const updatedComment = await editComment(cid, commentToBeUpdated); // Update the comment in the database    
       if (isDev) {
         // setComments(prev => [...prev, updatedComment]); // Add the new comment to the state
-        setComments(prev => prev.map(c => (c.id === cid ? updatedComment : c)))
+        // setComments(prev => prev.map(c => (c.id === cid ? updatedComment : c)))
+        async function loadComments() {
+          const data = await getCommentsByArticleId(parseInt(id));
+          console.log(data);
+          setComments(data);
+        }
+        loadComments();
       }
       setEditingId(null); // Clear the editing state
       toast.info('Kommentar aktualisiert.'); // Show info toast

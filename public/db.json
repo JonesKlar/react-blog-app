@@ -26,1301 +26,601 @@
       "id": "1",
       "title": "5G Netzwerke im Jahr 2021: Chancen und Risiken",
       "content": "5G Netzwerke entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Telecommunications",
-      "comments": [
-        {
-          "id": 1,
-          "author": "User1",
-          "content": "Hat mir weitergeholfen."
-        }
-      ]
+      "category": "Telecommunications"
     },
     {
       "id": "2",
       "title": "Künstliche Intelligenz im Jahr 2022: Chancen und Risiken",
       "content": "Künstliche Intelligenz entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "AI & Machine Learning",
-      "comments": [
-        {
-          "id": 2,
-          "author": "User2",
-          "content": "Das wusste ich noch nicht!"
-        }
-      ]
+      "category": "AI & Machine Learning"
     },
     {
       "id": "3",
       "title": "Biometrische Sicherheit im Jahr 2023: Chancen und Risiken",
       "content": "Biometrische Sicherheit entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Security",
-      "comments": [
-        {
-          "id": 3,
-          "author": "User3",
-          "content": "Sehr spannend, danke!"
-        }
-      ]
+      "category": "Security"
     },
     {
       "id": "4",
       "title": "Maschinelles Lernen im Jahr 2024: Chancen und Risiken",
       "content": "Maschinelles Lernen entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "AI & Machine Learning",
-      "comments": [
-        {
-          "id": 4,
-          "author": "User4",
-          "content": "Toller Überblick!"
-        }
-      ]
+      "category": "AI & Machine Learning"
     },
     {
       "id": "5",
       "title": "Robotik im Jahr 2025: Chancen und Risiken",
       "content": "Robotik entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Robotics",
-      "comments": [
-        {
-          "id": 5,
-          "author": "User5",
-          "content": "Toller Überblick!"
-        }
-      ]
+      "category": "Robotics"
     },
     {
       "id": "6",
       "title": "Robotik im Jahr 2020: Chancen und Risiken",
       "content": "Robotik entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Robotics",
-      "comments": [
-        {
-          "id": 6,
-          "author": "User6",
-          "content": "Ich sehe das Thema jetzt klarer."
-        }
-      ]
+      "category": "Robotics"
     },
     {
       "id": "7",
       "title": "Maschinelles Lernen im Jahr 2021: Chancen und Risiken",
       "content": "Maschinelles Lernen entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "AI & Machine Learning",
-      "comments": [
-        {
-          "id": 7,
-          "author": "User7",
-          "content": "Ich sehe das Thema jetzt klarer."
-        }
-      ]
+      "category": "AI & Machine Learning"
     },
     {
       "id": "8",
       "title": "Cybersecurity im Jahr 2022: Chancen und Risiken",
       "content": "Cybersecurity entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Cybersecurity",
-      "comments": [
-        {
-          "id": 8,
-          "author": "User8",
-          "content": "Konnte viel lernen."
-        }
-      ]
+      "category": "Cybersecurity"
     },
     {
       "id": "9",
       "title": "5G Netzwerke im Jahr 2023: Chancen und Risiken",
       "content": "5G Netzwerke entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Telecommunications",
-      "comments": [
-        {
-          "id": 9,
-          "author": "User9",
-          "content": "Ich sehe das Thema jetzt klarer."
-        }
-      ]
+      "category": "Telecommunications"
     },
     {
       "id": "10",
       "title": "Wearables im Jahr 2024: Chancen und Risiken",
       "content": "Wearables entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Wearables",
-      "comments": [
-        {
-          "id": 10,
-          "author": "User10",
-          "content": "Gut erklärt!"
-        }
-      ]
+      "category": "Wearables"
     },
     {
       "id": "11",
       "title": "5G Netzwerke im Jahr 2025: Chancen und Risiken",
       "content": "5G Netzwerke entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Telecommunications",
-      "comments": [
-        {
-          "id": 11,
-          "author": "User11",
-          "content": "Sehr spannend, danke!"
-        }
-      ]
+      "category": "Telecommunications"
     },
     {
       "id": "12",
       "title": "Smart Homes im Jahr 2020: Chancen und Risiken",
       "content": "Smart Homes entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Smart Home",
-      "comments": [
-        {
-          "id": 12,
-          "author": "User12",
-          "content": "Ich sehe das Thema jetzt klarer."
-        }
-      ]
+      "category": "Smart Home"
     },
     {
       "id": "13",
       "title": "Drohnen im Jahr 2021: Chancen und Risiken",
       "content": "Drohnen entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Drones",
-      "comments": [
-        {
-          "id": 13,
-          "author": "User13",
-          "content": "Toller Überblick!"
-        }
-      ]
+      "category": "Drones"
     },
     {
       "id": "14",
       "title": "Quantencomputer im Jahr 2022: Chancen und Risiken",
       "content": "Quantencomputer entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Quantum Computing",
-      "comments": [
-        {
-          "id": 14,
-          "author": "User14",
-          "content": "Kritisch betrachtet, aber hilfreich."
-        }
-      ]
+      "category": "Quantum Computing"
     },
     {
       "id": "15",
       "title": "Biometrische Sicherheit im Jahr 2023: Chancen und Risiken",
       "content": "Biometrische Sicherheit entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Security",
-      "comments": [
-        {
-          "id": 15,
-          "author": "User15",
-          "content": "Ich sehe das Thema jetzt klarer."
-        }
-      ]
+      "category": "Security"
     },
     {
       "id": "16",
       "title": "Robotik im Jahr 2024: Chancen und Risiken",
       "content": "Robotik entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Robotics",
-      "comments": [
-        {
-          "id": 16,
-          "author": "User16",
-          "content": "Toller Überblick!"
-        }
-      ]
+      "category": "Robotics"
     },
     {
       "id": "17",
       "title": "Virtuelle Realität im Jahr 2025: Chancen und Risiken",
       "content": "Virtuelle Realität entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Virtual Reality",
-      "comments": [
-        {
-          "id": 17,
-          "author": "User17",
-          "content": "Sehr informativ geschrieben."
-        }
-      ]
+      "category": "Virtual Reality"
     },
     {
       "id": "18",
       "title": "Internet der Dinge im Jahr 2020: Chancen und Risiken",
       "content": "Internet der Dinge entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "IoT",
-      "comments": [
-        {
-          "id": 18,
-          "author": "User18",
-          "content": "Interessanter Beitrag!"
-        }
-      ]
+      "category": "IoT"
     },
     {
       "id": "19",
       "title": "Wearables im Jahr 2021: Chancen und Risiken",
       "content": "Wearables entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Wearables",
-      "comments": [
-        {
-          "id": 19,
-          "author": "User19",
-          "content": "Hat mir weitergeholfen."
-        }
-      ]
+      "category": "Wearables"
     },
     {
       "id": "20",
       "title": "Wearables im Jahr 2022: Chancen und Risiken",
       "content": "Wearables entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Wearables",
-      "comments": [
-        {
-          "id": 20,
-          "author": "User20",
-          "content": "Hat mir weitergeholfen."
-        }
-      ]
+      "category": "Wearables"
     },
     {
       "id": "21",
       "title": "Robotik im Jahr 2023: Chancen und Risiken",
       "content": "Robotik entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Robotics",
-      "comments": [
-        {
-          "id": 21,
-          "author": "User21",
-          "content": "Interessanter Beitrag!"
-        }
-      ]
+      "category": "Robotics"
     },
     {
       "id": "22",
       "title": "Blockchain im Jahr 2024: Chancen und Risiken",
       "content": "Blockchain entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Blockchain",
-      "comments": [
-        {
-          "id": 22,
-          "author": "User22",
-          "content": "Das wusste ich noch nicht!"
-        }
-      ]
+      "category": "Blockchain"
     },
     {
       "id": "23",
       "title": "Drohnen im Jahr 2025: Chancen und Risiken",
       "content": "Drohnen entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Drones",
-      "comments": [
-        {
-          "id": 23,
-          "author": "User23",
-          "content": "Hat mir weitergeholfen."
-        }
-      ]
+      "category": "Drones"
     },
     {
       "id": "24",
       "title": "Biometrische Sicherheit im Jahr 2020: Chancen und Risiken",
       "content": "Biometrische Sicherheit entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Security",
-      "comments": [
-        {
-          "id": 24,
-          "author": "User24",
-          "content": "Sehr spannend, danke!"
-        }
-      ]
+      "category": "Security"
     },
     {
       "id": "25",
       "title": "Blockchain im Jahr 2021: Chancen und Risiken",
       "content": "Blockchain entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Blockchain",
-      "comments": [
-        {
-          "id": 25,
-          "author": "User25",
-          "content": "Sehr spannend, danke!"
-        }
-      ]
+      "category": "Blockchain"
     },
     {
       "id": "26",
       "title": "5G Netzwerke im Jahr 2022: Chancen und Risiken",
       "content": "5G Netzwerke entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Telecommunications",
-      "comments": [
-        {
-          "id": 26,
-          "author": "User26",
-          "content": "Sehr informativ geschrieben."
-        }
-      ]
+      "category": "Telecommunications"
     },
     {
       "id": "27",
       "title": "5G Netzwerke im Jahr 2023: Chancen und Risiken",
       "content": "5G Netzwerke entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Telecommunications",
-      "comments": [
-        {
-          "id": 27,
-          "author": "User27",
-          "content": "Hat mir weitergeholfen."
-        }
-      ]
+      "category": "Telecommunications"
     },
     {
       "id": "28",
       "title": "Big Data im Jahr 2024: Chancen und Risiken",
       "content": "Big Data entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Big Data",
-      "comments": [
-        {
-          "id": 28,
-          "author": "User28",
-          "content": "Sehr informativ geschrieben."
-        }
-      ]
+      "category": "Big Data"
     },
     {
       "id": "29",
       "title": "Internet der Dinge im Jahr 2025: Chancen und Risiken",
       "content": "Internet der Dinge entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "IoT",
-      "comments": [
-        {
-          "id": 29,
-          "author": "User29",
-          "content": "Kritisch betrachtet, aber hilfreich."
-        }
-      ]
+      "category": "IoT"
     },
     {
       "id": "30",
       "title": "Maschinelles Lernen im Jahr 2020: Chancen und Risiken",
       "content": "Maschinelles Lernen entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "AI & Machine Learning",
-      "comments": [
-        {
-          "id": 30,
-          "author": "User30",
-          "content": "Konnte viel lernen."
-        }
-      ]
+      "category": "AI & Machine Learning"
     },
     {
       "id": "31",
       "title": "Wearables im Jahr 2021: Chancen und Risiken",
       "content": "Wearables entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Wearables",
-      "comments": [
-        {
-          "id": 31,
-          "author": "User31",
-          "content": "Interessanter Beitrag!"
-        }
-      ]
+      "category": "Wearables"
     },
     {
       "id": "32",
       "title": "Maschinelles Lernen im Jahr 2022: Chancen und Risiken",
       "content": "Maschinelles Lernen entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "AI & Machine Learning",
-      "comments": [
-        {
-          "id": 32,
-          "author": "User32",
-          "content": "Das wusste ich noch nicht!"
-        }
-      ]
+      "category": "AI & Machine Learning"
     },
     {
       "id": "33",
       "title": "5G Netzwerke im Jahr 2023: Chancen und Risiken",
       "content": "5G Netzwerke entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Telecommunications",
-      "comments": [
-        {
-          "id": 33,
-          "author": "User33",
-          "content": "Interessanter Beitrag!"
-        }
-      ]
+      "category": "Telecommunications"
     },
     {
       "id": "34",
       "title": "Big Data im Jahr 2024: Chancen und Risiken",
       "content": "Big Data entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Big Data",
-      "comments": [
-        {
-          "id": 34,
-          "author": "User34",
-          "content": "Gut erklärt!"
-        }
-      ]
+      "category": "Big Data"
     },
     {
       "id": "35",
       "title": "5G Netzwerke im Jahr 2025: Chancen und Risiken",
       "content": "5G Netzwerke entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Telecommunications",
-      "comments": [
-        {
-          "id": 35,
-          "author": "User35",
-          "content": "Gut erklärt!"
-        }
-      ]
+      "category": "Telecommunications"
     },
     {
       "id": "36",
       "title": "Drohnen im Jahr 2020: Chancen und Risiken",
       "content": "Drohnen entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Drones",
-      "comments": [
-        {
-          "id": 36,
-          "author": "User36",
-          "content": "Hat mir weitergeholfen."
-        }
-      ]
+      "category": "Drones"
     },
     {
       "id": "37",
       "title": "Robotik im Jahr 2021: Chancen und Risiken",
       "content": "Robotik entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Robotics",
-      "comments": [
-        {
-          "id": 37,
-          "author": "User37",
-          "content": "Sehr informativ geschrieben."
-        }
-      ]
+      "category": "Robotics"
     },
     {
       "id": "38",
       "title": "Augmented Reality im Jahr 2022: Chancen und Risiken",
       "content": "Augmented Reality entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Augmented Reality",
-      "comments": [
-        {
-          "id": 38,
-          "author": "User38",
-          "content": "Kritisch betrachtet, aber hilfreich."
-        }
-      ]
+      "category": "Augmented Reality"
     },
     {
       "id": "39",
       "title": "Biometrische Sicherheit im Jahr 2023: Chancen und Risiken",
       "content": "Biometrische Sicherheit entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Security",
-      "comments": [
-        {
-          "id": 39,
-          "author": "User39",
-          "content": "Toller Überblick!"
-        }
-      ]
+      "category": "Security"
     },
     {
       "id": "40",
       "title": "Augmented Reality im Jahr 2024: Chancen und Risiken",
       "content": "Augmented Reality entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Augmented Reality",
-      "comments": [
-        {
-          "id": 40,
-          "author": "User40",
-          "content": "Toller Überblick!"
-        }
-      ]
+      "category": "Augmented Reality"
     },
     {
       "id": "41",
       "title": "Virtuelle Realität im Jahr 2025: Chancen und Risiken",
       "content": "Virtuelle Realität entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Virtual Reality",
-      "comments": [
-        {
-          "id": 41,
-          "author": "User41",
-          "content": "Hat mir weitergeholfen."
-        }
-      ]
+      "category": "Virtual Reality"
     },
     {
       "id": "42",
       "title": "Edge Computing im Jahr 2020: Chancen und Risiken",
       "content": "Edge Computing entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Edge Computing",
-      "comments": [
-        {
-          "id": 42,
-          "author": "User42",
-          "content": "Sehr informativ geschrieben."
-        }
-      ]
+      "category": "Edge Computing"
     },
     {
       "id": "43",
       "title": "Blockchain im Jahr 2021: Chancen und Risiken",
       "content": "Blockchain entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Blockchain",
-      "comments": [
-        {
-          "id": 43,
-          "author": "User43",
-          "content": "Gut erklärt!"
-        }
-      ]
+      "category": "Blockchain"
     },
     {
       "id": "44",
       "title": "Robotik im Jahr 2022: Chancen und Risiken",
       "content": "Robotik entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Robotics",
-      "comments": [
-        {
-          "id": 44,
-          "author": "User44",
-          "content": "Gut erklärt!"
-        }
-      ]
+      "category": "Robotics"
     },
     {
       "id": "45",
       "title": "Digitale Bildung im Jahr 2023: Chancen und Risiken",
       "content": "Digitale Bildung entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Education Technology",
-      "comments": [
-        {
-          "id": 45,
-          "author": "User45",
-          "content": "Sehr spannend, danke!"
-        }
-      ]
+      "category": "Education Technology"
     },
     {
       "id": "46",
       "title": "Blockchain im Jahr 2024: Chancen und Risiken",
       "content": "Blockchain entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Blockchain",
-      "comments": [
-        {
-          "id": 46,
-          "author": "User46",
-          "content": "Interessanter Beitrag!"
-        }
-      ]
+      "category": "Blockchain"
     },
     {
       "id": "47",
       "title": "Augmented Reality im Jahr 2025: Chancen und Risiken",
       "content": "Augmented Reality entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Augmented Reality",
-      "comments": [
-        {
-          "id": 47,
-          "author": "User47",
-          "content": "Das wusste ich noch nicht!"
-        }
-      ]
+      "category": "Augmented Reality"
     },
     {
       "id": "48",
       "title": "Internet der Dinge im Jahr 2020: Chancen und Risiken",
       "content": "Internet der Dinge entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "IoT",
-      "comments": [
-        {
-          "id": 48,
-          "author": "User48",
-          "content": "Toller Überblick!"
-        }
-      ]
+      "category": "IoT"
     },
     {
       "id": "49",
       "title": "Smart Homes im Jahr 2021: Chancen und Risiken",
       "content": "Smart Homes entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Smart Home",
-      "comments": [
-        {
-          "id": 49,
-          "author": "User49",
-          "content": "Kritisch betrachtet, aber hilfreich."
-        }
-      ]
+      "category": "Smart Home"
     },
     {
       "id": "50",
       "title": "Cloud Computing im Jahr 2022: Chancen und Risiken",
       "content": "Cloud Computing entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Cloud Computing",
-      "comments": [
-        {
-          "id": 50,
-          "author": "User50",
-          "content": "Ich sehe das Thema jetzt klarer."
-        }
-      ]
+      "category": "Cloud Computing"
     },
     {
       "id": "51",
       "title": "Big Data im Jahr 2023: Chancen und Risiken",
       "content": "Big Data entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Big Data",
-      "comments": [
-        {
-          "id": 51,
-          "author": "User51",
-          "content": "Ich sehe das Thema jetzt klarer."
-        }
-      ]
+      "category": "Big Data"
     },
     {
       "id": "52",
       "title": "Cybersecurity im Jahr 2024: Chancen und Risiken",
       "content": "Cybersecurity entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Cybersecurity",
-      "comments": [
-        {
-          "id": 52,
-          "author": "User52",
-          "content": "Ich sehe das Thema jetzt klarer."
-        }
-      ]
+      "category": "Cybersecurity"
     },
     {
       "id": "53",
       "title": "Blockchain im Jahr 2025: Chancen und Risiken",
       "content": "Blockchain entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Blockchain",
-      "comments": [
-        {
-          "id": 53,
-          "author": "User53",
-          "content": "Sehr spannend, danke!"
-        }
-      ]
+      "category": "Blockchain"
     },
     {
       "id": "54",
       "title": "Wearables im Jahr 2020: Chancen und Risiken",
       "content": "Wearables entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Wearables",
-      "comments": [
-        {
-          "id": 54,
-          "author": "User54",
-          "content": "Interessanter Beitrag!"
-        }
-      ]
+      "category": "Wearables"
     },
     {
       "id": "55",
       "title": "Big Data im Jahr 2021: Chancen und Risiken",
       "content": "Big Data entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Big Data",
-      "comments": [
-        {
-          "id": 55,
-          "author": "User55",
-          "content": "Interessanter Beitrag!"
-        }
-      ]
+      "category": "Big Data"
     },
     {
       "id": "56",
       "title": "5G Netzwerke im Jahr 2022: Chancen und Risiken",
       "content": "5G Netzwerke entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Telecommunications",
-      "comments": [
-        {
-          "id": 56,
-          "author": "User56",
-          "content": "Hat mir weitergeholfen."
-        }
-      ]
+      "category": "Telecommunications"
     },
     {
       "id": "57",
       "title": "Autonomes Fahren im Jahr 2023: Chancen und Risiken",
       "content": "Autonomes Fahren entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Autonomous Vehicles",
-      "comments": [
-        {
-          "id": 57,
-          "author": "User57",
-          "content": "Hat mir weitergeholfen."
-        }
-      ]
+      "category": "Autonomous Vehicles"
     },
     {
       "id": "58",
       "title": "Smart Homes im Jahr 2024: Chancen und Risiken",
       "content": "Smart Homes entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Smart Home",
-      "comments": [
-        {
-          "id": 58,
-          "author": "User58",
-          "content": "Das wusste ich noch nicht!"
-        }
-      ]
+      "category": "Smart Home"
     },
     {
       "id": "59",
       "title": "Quantencomputer im Jahr 2025: Chancen und Risiken",
       "content": "Quantencomputer entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Quantum Computing",
-      "comments": [
-        {
-          "id": 59,
-          "author": "User59",
-          "content": "Kritisch betrachtet, aber hilfreich."
-        }
-      ]
+      "category": "Quantum Computing"
     },
     {
       "id": "60",
       "title": "Edge Computing im Jahr 2020: Chancen und Risiken",
       "content": "Edge Computing entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Edge Computing",
-      "comments": [
-        {
-          "id": 60,
-          "author": "User60",
-          "content": "Toller Überblick!"
-        }
-      ]
+      "category": "Edge Computing"
     },
     {
       "id": "61",
       "title": "Wearables im Jahr 2021: Chancen und Risiken",
       "content": "Wearables entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Wearables",
-      "comments": [
-        {
-          "id": 61,
-          "author": "User61",
-          "content": "Konnte viel lernen."
-        }
-      ]
+      "category": "Wearables"
     },
     {
       "id": "62",
       "title": "Robotik im Jahr 2022: Chancen und Risiken",
       "content": "Robotik entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Robotics",
-      "comments": [
-        {
-          "id": 62,
-          "author": "User62",
-          "content": "Gut erklärt!"
-        }
-      ]
+      "category": "Robotics"
     },
     {
       "id": "63",
       "title": "Big Data im Jahr 2023: Chancen und Risiken",
       "content": "Big Data entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Big Data",
-      "comments": [
-        {
-          "id": 63,
-          "author": "User63",
-          "content": "Hat mir weitergeholfen."
-        }
-      ]
+      "category": "Big Data"
     },
     {
       "id": "64",
       "title": "Quantencomputer im Jahr 2024: Chancen und Risiken",
       "content": "Quantencomputer entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Quantum Computing",
-      "comments": [
-        {
-          "id": 64,
-          "author": "User64",
-          "content": "Gut erklärt!"
-        }
-      ]
+      "category": "Quantum Computing"
     },
     {
       "id": "65",
       "title": "5G Netzwerke im Jahr 2025: Chancen und Risiken",
       "content": "5G Netzwerke entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Telecommunications",
-      "comments": [
-        {
-          "id": 65,
-          "author": "User65",
-          "content": "Interessanter Beitrag!"
-        }
-      ]
+      "category": "Telecommunications"
     },
     {
       "id": "66",
       "title": "Biometrische Sicherheit im Jahr 2020: Chancen und Risiken",
       "content": "Biometrische Sicherheit entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Security",
-      "comments": [
-        {
-          "id": 66,
-          "author": "User66",
-          "content": "Interessanter Beitrag!"
-        }
-      ]
+      "category": "Security"
     },
     {
       "id": "67",
       "title": "Internet der Dinge im Jahr 2021: Chancen und Risiken",
       "content": "Internet der Dinge entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "IoT",
-      "comments": [
-        {
-          "id": 67,
-          "author": "User67",
-          "content": "Hat mir weitergeholfen."
-        }
-      ]
+      "category": "IoT"
     },
     {
       "id": "68",
       "title": "Robotik im Jahr 2022: Chancen und Risiken",
       "content": "Robotik entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Robotics",
-      "comments": [
-        {
-          "id": 68,
-          "author": "User68",
-          "content": "Sehr spannend, danke!"
-        }
-      ]
+      "category": "Robotics"
     },
     {
       "id": "69",
       "title": "Internet der Dinge im Jahr 2023: Chancen und Risiken",
       "content": "Internet der Dinge entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "IoT",
-      "comments": [
-        {
-          "id": 69,
-          "author": "User69",
-          "content": "Hat mir weitergeholfen."
-        }
-      ]
+      "category": "IoT"
     },
     {
       "id": "70",
       "title": "Augmented Reality im Jahr 2024: Chancen und Risiken",
       "content": "Augmented Reality entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Augmented Reality",
-      "comments": [
-        {
-          "id": 70,
-          "author": "User70",
-          "content": "Das wusste ich noch nicht!"
-        }
-      ]
+      "category": "Augmented Reality"
     },
     {
       "id": "71",
       "title": "Cybersecurity im Jahr 2025: Chancen und Risiken",
       "content": "Cybersecurity entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Cybersecurity",
-      "comments": [
-        {
-          "id": 71,
-          "author": "User71",
-          "content": "Kritisch betrachtet, aber hilfreich."
-        }
-      ]
+      "category": "Cybersecurity"
     },
     {
       "id": "72",
       "title": "Edge Computing im Jahr 2020: Chancen und Risiken",
       "content": "Edge Computing entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Edge Computing",
-      "comments": [
-        {
-          "id": 72,
-          "author": "User72",
-          "content": "Toller Überblick!"
-        }
-      ]
+      "category": "Edge Computing"
     },
     {
       "id": "73",
       "title": "Cybersecurity im Jahr 2021: Chancen und Risiken",
       "content": "Cybersecurity entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Cybersecurity",
-      "comments": [
-        {
-          "id": 73,
-          "author": "User73",
-          "content": "Sehr informativ geschrieben."
-        }
-      ]
+      "category": "Cybersecurity"
     },
     {
       "id": "74",
       "title": "Internet der Dinge im Jahr 2022: Chancen und Risiken",
       "content": "Internet der Dinge entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "IoT",
-      "comments": [
-        {
-          "id": 74,
-          "author": "User74",
-          "content": "Gut erklärt!"
-        }
-      ]
+      "category": "IoT"
     },
     {
       "id": "75",
       "title": "Robotik im Jahr 2023: Chancen und Risiken",
       "content": "Robotik entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Robotics",
-      "comments": [
-        {
-          "id": 75,
-          "author": "User75",
-          "content": "Toller Überblick!"
-        }
-      ]
+      "category": "Robotics"
     },
     {
       "id": "76",
       "title": "Cybersecurity im Jahr 2024: Chancen und Risiken",
       "content": "Cybersecurity entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Cybersecurity",
-      "comments": [
-        {
-          "id": 76,
-          "author": "User76",
-          "content": "Sehr spannend, danke!"
-        }
-      ]
+      "category": "Cybersecurity"
     },
     {
       "id": "77",
       "title": "Robotik im Jahr 2025: Chancen und Risiken",
       "content": "Robotik entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Robotics",
-      "comments": [
-        {
-          "id": 77,
-          "author": "User77",
-          "content": "Toller Überblick!"
-        }
-      ]
+      "category": "Robotics"
     },
     {
       "id": "78",
       "title": "5G Netzwerke im Jahr 2020: Chancen und Risiken",
       "content": "5G Netzwerke entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Telecommunications",
-      "comments": [
-        {
-          "id": 78,
-          "author": "User78",
-          "content": "Toller Überblick!"
-        }
-      ]
+      "category": "Telecommunications"
     },
     {
       "id": "79",
       "title": "5G Netzwerke im Jahr 2021: Chancen und Risiken",
       "content": "5G Netzwerke entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Telecommunications",
-      "comments": [
-        {
-          "id": 79,
-          "author": "User79",
-          "content": "Ich sehe das Thema jetzt klarer."
-        }
-      ]
+      "category": "Telecommunications"
     },
     {
       "id": "80",
       "title": "Internet der Dinge im Jahr 2022: Chancen und Risiken",
       "content": "Internet der Dinge entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "IoT",
-      "comments": [
-        {
-          "id": 80,
-          "author": "User80",
-          "content": "Das wusste ich noch nicht!"
-        }
-      ]
+      "category": "IoT"
     },
     {
       "id": "81",
       "title": "5G Netzwerke im Jahr 2023: Chancen und Risiken",
       "content": "5G Netzwerke entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Telecommunications",
-      "comments": [
-        {
-          "id": 81,
-          "author": "User81",
-          "content": "Toller Überblick!"
-        }
-      ]
+      "category": "Telecommunications"
     },
     {
       "id": "82",
       "title": "Drohnen im Jahr 2024: Chancen und Risiken",
       "content": "Drohnen entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Drones",
-      "comments": [
-        {
-          "id": 82,
-          "author": "User82",
-          "content": "Sehr informativ geschrieben."
-        }
-      ]
+      "category": "Drones"
     },
     {
       "id": "83",
       "title": "5G Netzwerke im Jahr 2025: Chancen und Risiken",
       "content": "5G Netzwerke entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Telecommunications",
-      "comments": [
-        {
-          "id": 83,
-          "author": "User83",
-          "content": "Interessanter Beitrag!"
-        }
-      ]
+      "category": "Telecommunications"
     },
     {
       "id": "84",
       "title": "Edge Computing im Jahr 2020: Chancen und Risiken",
       "content": "Edge Computing entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Edge Computing",
-      "comments": [
-        {
-          "id": 84,
-          "author": "User84",
-          "content": "Toller Überblick!"
-        }
-      ]
+      "category": "Edge Computing"
     },
     {
       "id": "85",
       "title": "Robotik im Jahr 2021: Chancen und Risiken",
       "content": "Robotik entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Robotics",
-      "comments": [
-        {
-          "id": 85,
-          "author": "User85",
-          "content": "Gut erklärt!"
-        }
-      ]
+      "category": "Robotics"
     },
     {
       "id": "86",
       "title": "Big Data im Jahr 2022: Chancen und Risiken",
       "content": "Big Data entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Big Data",
-      "comments": [
-        {
-          "id": 86,
-          "author": "User86",
-          "content": "Konnte viel lernen."
-        }
-      ]
+      "category": "Big Data"
     },
     {
       "id": "87",
       "title": "5G Netzwerke im Jahr 2023: Chancen und Risiken",
       "content": "5G Netzwerke entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Telecommunications",
-      "comments": [
-        {
-          "id": 87,
-          "author": "User87",
-          "content": "Sehr informativ geschrieben."
-        }
-      ]
+      "category": "Telecommunications"
     },
     {
       "id": "88",
       "title": "Cloud Computing im Jahr 2024: Chancen und Risiken",
       "content": "Cloud Computing entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Cloud Computing",
-      "comments": [
-        {
-          "id": 88,
-          "author": "User88",
-          "content": "Das wusste ich noch nicht!"
-        }
-      ]
+      "category": "Cloud Computing"
     },
     {
       "id": "89",
       "title": "Blockchain im Jahr 2025: Chancen und Risiken",
       "content": "Blockchain entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Blockchain",
-      "comments": [
-        {
-          "id": 89,
-          "author": "User89",
-          "content": "Das wusste ich noch nicht!"
-        }
-      ]
+      "category": "Blockchain"
     },
     {
       "id": "90",
       "title": "Maschinelles Lernen im Jahr 2020: Chancen und Risiken",
       "content": "Maschinelles Lernen entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "AI & Machine Learning",
-      "comments": [
-        {
-          "id": 90,
-          "author": "User90",
-          "content": "Interessanter Beitrag!"
-        }
-      ]
+      "category": "AI & Machine Learning"
     },
     {
       "id": "91",
       "title": "Cloud Computing im Jahr 2021: Chancen und Risiken",
       "content": "Cloud Computing entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Cloud Computing",
-      "comments": [
-        {
-          "id": 91,
-          "author": "User91",
-          "content": "Sehr spannend, danke!"
-        }
-      ]
+      "category": "Cloud Computing"
     },
     {
       "id": "92",
       "title": "Künstliche Intelligenz im Jahr 2022: Chancen und Risiken",
       "content": "Künstliche Intelligenz entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "AI & Machine Learning",
-      "comments": [
-        {
-          "id": 92,
-          "author": "User92",
-          "content": "Kritisch betrachtet, aber hilfreich."
-        }
-      ]
+      "category": "AI & Machine Learning"
     },
     {
       "id": "93",
       "title": "Virtuelle Realität im Jahr 2023: Chancen und Risiken",
       "content": "Virtuelle Realität entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Virtual Reality",
-      "comments": [
-        {
-          "id": 93,
-          "author": "User93",
-          "content": "Gut erklärt!"
-        }
-      ]
+      "category": "Virtual Reality"
     },
     {
       "id": "94",
       "title": "Maschinelles Lernen im Jahr 2024: Chancen und Risiken",
       "content": "Maschinelles Lernen entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "AI & Machine Learning",
-      "comments": [
-        {
-          "id": 94,
-          "author": "User94",
-          "content": "Gut erklärt!"
-        }
-      ]
+      "category": "AI & Machine Learning"
     },
     {
       "id": "95",
       "title": "Cybersecurity im Jahr 2025: Chancen und Risiken",
       "content": "Cybersecurity entwickelt sich rasant weiter. Im Jahr 2025 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Cybersecurity",
-      "comments": [
-        {
-          "id": 95,
-          "author": "User95",
-          "content": "Konnte viel lernen."
-        }
-      ]
+      "category": "Cybersecurity"
     },
     {
       "id": "96",
       "title": "Maschinelles Lernen im Jahr 2020: Chancen und Risiken",
       "content": "Maschinelles Lernen entwickelt sich rasant weiter. Im Jahr 2020 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "AI & Machine Learning",
-      "comments": [
-        {
-          "id": 96,
-          "author": "User96",
-          "content": "Interessanter Beitrag!"
-        }
-      ]
+      "category": "AI & Machine Learning"
     },
     {
       "id": "97",
       "title": "5G Netzwerke im Jahr 2021: Chancen und Risiken",
       "content": "5G Netzwerke entwickelt sich rasant weiter. Im Jahr 2021 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Telecommunications",
-      "comments": [
-        {
-          "id": 97,
-          "author": "User97",
-          "content": "Gut erklärt!"
-        }
-      ]
+      "category": "Telecommunications"
     },
     {
       "id": "98",
       "title": "Big Data im Jahr 2022: Chancen und Risiken",
       "content": "Big Data entwickelt sich rasant weiter. Im Jahr 2022 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Big Data",
-      "comments": [
-        {
-          "id": 98,
-          "author": "User98",
-          "content": "Kritisch betrachtet, aber hilfreich."
-        }
-      ]
+      "category": "Big Data"
     },
     {
       "id": "99",
       "title": "Quantencomputer im Jahr 2023: Chancen und Risiken",
       "content": "Quantencomputer entwickelt sich rasant weiter. Im Jahr 2023 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "Quantum Computing",
-      "comments": [
-        {
-          "id": 99,
-          "author": "User99",
-          "content": "Hat mir weitergeholfen."
-        }
-      ]
+      "category": "Quantum Computing"
     },
     {
       "id": "100",
       "title": "Internet der Dinge im Jahr 2024: Chancen und Risiken",
       "content": "Internet der Dinge entwickelt sich rasant weiter. Im Jahr 2024 sehen wir bedeutende Fortschritte in der Anwendung dieser Technologie – sei es in der Industrie, im Alltag oder im Bildungsbereich. Dieser Artikel beleuchtet die aktuellen Entwicklungen, Herausforderungen und Zukunftsaussichten.",
-      "category": "IoT",
-      "comments": [
-        {
-          "id": 100,
-          "author": "User100",
-          "content": "Kritisch betrachtet, aber hilfreich."
-        }
-      ]
+      "category": "IoT"
     }
   ],
   "comments": [
@@ -1341,72 +641,6 @@
       "articleId": 2,
       "author": "admin",
       "content": "Tolle Anwendung für Blockchain!!!"
-    },
-    {
-      "id": "5111",
-      "articleId": 1,
-      "author": "admin",
-      "content": "dfas"
-    },
-    {
-      "id": "e6cf",
-      "articleId": 1,
-      "author": "admin",
-      "content": "dfasfdsaasdfsf"
-    },
-    {
-      "id": "38b8",
-      "articleId": 1,
-      "author": "admin",
-      "content": "fdsfdssdfsadaas"
-    },
-    {
-      "id": "dff0",
-      "articleId": 1,
-      "author": "admin",
-      "content": "hallo"
-    },
-    {
-      "id": "9198",
-      "articleId": 1,
-      "author": "admin",
-      "content": "dsfsadf"
-    },
-    {
-      "id": "7e92",
-      "articleId": 1,
-      "author": "admin",
-      "content": "cvfdsvvfdsfa"
-    },
-    {
-      "id": "14ad",
-      "articleId": 1,
-      "author": "admin",
-      "content": "dfgdsafdsfassdfas"
-    },
-    {
-      "id": "aedc",
-      "articleId": 1,
-      "author": "admin",
-      "content": "sdfsa"
-    },
-    {
-      "id": "335e",
-      "articleId": 1,
-      "author": "admin",
-      "content": "dsfdsadf"
-    },
-    {
-      "id": "5321",
-      "articleId": 1,
-      "author": "admin",
-      "content": "dsfasfd"
-    },
-    {
-      "id": "858c",
-      "articleId": 1,
-      "author": "admin",
-      "content": "sdfasfd"
     },
     {
       "id": "51c5",
@@ -1451,10 +685,82 @@
       "content": "Bbbb"
     },
     {
-      "id": "84f4",
+      "id": "07fe",
       "articleId": 1,
-      "author": "user",
-      "content": "dsfas"
+      "author": "admin",
+      "content": "sadfdsafd"
+    },
+    {
+      "id": "47f8",
+      "articleId": 1,
+      "author": "admin",
+      "content": "dfas"
+    },
+    {
+      "id": "3ac6",
+      "articleId": 1,
+      "author": "admin",
+      "content": "fddsafsda"
+    },
+    {
+      "id": "2b16",
+      "articleId": 1,
+      "author": "admin",
+      "content": "111111"
+    },
+    {
+      "id": "0a46",
+      "articleId": 1,
+      "author": "admin",
+      "content": "22222"
+    },
+    {
+      "id": "f7d3",
+      "articleId": 1,
+      "author": "admin",
+      "content": "33333"
+    },
+    {
+      "id": "1303",
+      "articleId": 1,
+      "author": "admin",
+      "content": "Hehshdhd"
+    },
+    {
+      "id": "d9b6",
+      "articleId": 1,
+      "author": "admin",
+      "content": "1"
+    },
+    {
+      "id": "2822",
+      "articleId": 1,
+      "author": "admin",
+      "content": "2"
+    },
+    {
+      "id": "379a",
+      "articleId": 1,
+      "author": "admin",
+      "content": "3"
+    },
+    {
+      "id": "a532",
+      "articleId": 1,
+      "author": "admin",
+      "content": "4"
+    },
+    {
+      "id": "bd80",
+      "articleId": 1,
+      "author": "admin",
+      "content": "5"
+    },
+    {
+      "id": "bbb4",
+      "articleId": 1,
+      "author": "admin",
+      "content": "67"
     }
   ]
 }
