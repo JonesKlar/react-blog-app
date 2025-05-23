@@ -1,6 +1,6 @@
 name: CI → GitHub Pages
 
-# make sure GITHUB_TOKEN has the right scopes
+# make sure your GITHUB_TOKEN has the right scopes
 permissions:
   contents: read       # read from your repo
   pages: write         # allow Pages deployments

@@ -9,7 +9,7 @@ Verify your os version in `cmd.exe`
 Docker must run under `Windows Containers`.
 Right-click docker tray icon => SWITCH TO WINDOWS CONTAINERS
 
-You can get various docker windows images from => [Docker Hub][https://hub.docker.com/r/microsoft/windows-servercore-iis]
+You can get various docker windows images from => [Docker Hub](https://hub.docker.com/r/microsoft/windows-servercore-iis)
 
 ## How to create the image
 
@@ -29,7 +29,7 @@ Run this command in the root folder of your proejct where your `Dockerfile` sits
 
 ## Access the app from host
 
-http://localhost:8083/
+[http://localhost:8083/](http://localhost:8083/)
 
 ## Debug a container - three ways
 
@@ -46,4 +46,4 @@ http://localhost:8083/
 
 ### 3. Shell gui access in Docker
 
-Open Docker app and click on your running container and got to `Exec`
+Open Docker app and click on your running container and go to section `Exec`

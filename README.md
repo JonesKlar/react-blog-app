@@ -1,5 +1,7 @@
 # Projektarbeit - JK
 
+Live site: [https://jonesklar.github.io/react-blog-app/](https://jonesklar.github.io/react-blog-app/)
+
 `web.config` is currently not needed, works without it to be deployed to IIS on docker image.
 
 ## App doesnt run

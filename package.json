@@ -1,7 +1,7 @@
 {
   "name": "react-blog-app",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "homepage": "https://jonesklar.github.io/react-blog-app",
   "description": "A simple blog app built with React and Vite.",
@@ -18,7 +18,7 @@
     "setup": "npm install -g json-server && npm install && npm run dev",
     "fresh": "npm install && npm run dev",
     "serve:prod": "concurrently \"npm run start:api\" \"npm run preview\"",
-    "predeploy": "npm run build && cpy-cli dist/index.html dist/404.html",
+    "predeploy": "npm run build && node copy-files.js",
     "deploy": "gh-pages -d dist",
     "clean": "rmdir /s /q dist"
   },
