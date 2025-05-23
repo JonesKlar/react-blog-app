@@ -1,13 +1,28 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+// import { viteStaticCopy } from 'vite-plugin-static-copy';
 
-export default defineConfig(({ command }) => ({
-  plugins: [react(), tailwindcss()],
+export default defineConfig(({ command, mode }) => ({
+  plugins: [
+    react(),
+    tailwindcss(),
+    // viteStaticCopy({
+    //   targets: [
+    //     {
+    //       src: 'web.config', // relative to project root
+    //       dest: ''           // copy to dist root
+    //     }
+    //   ]
+    // })
+  ],
+
   // serve at ‘/’ in dev, but build to “/react-blog-app/” in prod
   base: command === 'serve'
     ? '/'                    // dev‐server URL: http://localhost:5173/
-    : '/react-blog-app/',    // production build
+    : mode === 'docker'
+      ? '/'
+      : '/react-blog-app/',    // production build
   build: {
     outDir: 'dist',
   },
@@ -16,22 +31,3 @@ export default defineConfig(({ command }) => ({
     port: 5173,
   },
 }))
-
-
-// import { defineConfig } from 'vite'
-// import react from '@vitejs/plugin-react'
-// import tailwindcss from '@tailwindcss/vite'
-
-
-// // https://vite.dev/config/
-// export default defineConfig({
-//   plugins: [react(), tailwindcss()],
-//   base: '/react-blog-app/',
-//   build: {
-//     outDir: "dist", // Change 'dist' to 'build'
-//   },
-//   server: {
-//     host: true,      // shorthand for 0.0.0.0
-//     port: 5173,
-//   },
-// })

@@ -1,5 +1,7 @@
 # Projektarbeit - JK
 
+`web.config` is currently not needed, works without it to be deployed to IIS on docker image.
+
 ## App doesnt run
 
 Check which settings are set in `.env.development` when running the dev build
