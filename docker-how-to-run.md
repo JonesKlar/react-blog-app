@@ -9,6 +9,8 @@ Verify your os version in `cmd.exe`
 Docker must run under `Windows Containers`.
 Right-click docker tray icon => SWITCH TO WINDOWS CONTAINERS
 
+You can get various docker windows images from => [Docker Hub][https://hub.docker.com/r/microsoft/windows-servercore-iis]
+
 ## How to create the image
 
 Run this command in the root folder of your proejct where your `Dockerfile` sits:
@@ -21,15 +23,13 @@ Run this command in the root folder of your proejct where your `Dockerfile` sits
 ## Create a container for the generated image
 
     docker run -d --name react-iis-container -p 8083:80 react-iis-app 
-    
+
     // generates and runs the container with the name supplied
     docker run -d --name name-for-your container -p 8083:80 name-of-the-previously-generated-image 
 
 ## Access the app from host
 
-<http://localhost:8083/>
-
-docker logs react_iis
+http://localhost:8083/
 
 ## Debug a container - three ways
 
